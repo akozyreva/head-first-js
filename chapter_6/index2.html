@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Planets</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function init(){
+			var planet = document.getElementById("greenplanet");
+			planet.innerHTML = "Red Alert";
+			planet.setAttribute("class", "redtext");
+			console.log(planet.getAttribute("class"));
+		}
+		//запуск кода только после того, как стр будет загружена
+		window.onload = init;
+	</script>
+	<style type="text/css">
+		.redtext{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Green planet</h1>
+	<p id="greenplanet">All is well</p>
+	<h1>Red Planet</h1>
+	<p id="redplanet">Nothing to report</p>
+	<h1>Blue planet</h1>
+	<p id="blueplanet">All systems A-OK</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My blog</title>
+	<meta charset="utf-8">
+	<script src="blog.js"></script>
+</head>
+<body>
+	<h1>My blog</h1>
+	<div id="entry1">
+		<h2>Great day bird watching</h2>
+		<p>
+			Today I saw three ducks!
+			I named them
+			Huey, Louie, and Dewey.
+		</p>
+		<p id="test">
+			I took a couple of photos
+		</p>
+		<script type="text/javascript">
+			var z = document.getElementById("test");
+			console.log(z);
+			console.log(z.innerHTML);
+			z.innerHTML = "test66";
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Don't resize me</title>
+	<script type="text/javascript">
+		function resize(){
+			console.log(222);
+			var element = document.getElementById("display");
+			element.innerHTML = element.innerHTML + " that tickles!";
+		}
+	</script>
+</head>
+<body>
+	<p id="display">Whatever you do, dont't resize this window! I'm warnig you!</p>
+	<script type="text/javascript">
+		window.onresize = resize;
+	</script>
+</body>
+</html>
